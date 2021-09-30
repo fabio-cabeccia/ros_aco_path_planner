@@ -6,7 +6,7 @@ ACO path planning plugin for Global Planner based on AS algorithm.
 * Clone this repository inside catkin_ws/src using `git clone https://github.com/fabio-cabeccia/ros_aco_path_planner.git`.
 * Build the package either individually or along with the rest of the workspace.
 * Add the following line to your move_base launch file: 
-  `<param name="base_global_planner" value="aco_ros/aco_ros_planner"/>`
+  `<param name="base_global_planner" value="aco_ros/aco_ros_planner"/>` or use the file `move_base_mod.launch` inside `/launch`.
 
 **Currently known problems:**
 * If using slam and non static map, all the cell inside the costmap will not have 
