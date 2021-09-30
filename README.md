@@ -11,6 +11,7 @@ ACO path planning plugin for Global Planner based on AS algorithm.
 **Currently known problems:**
 * If using slam and non static map, all the cell inside the costmap will not have 
   a value other than 0 (free space). This leads to a situation where the ant, while exploring, finds itself on the border of the map and it can not    continue to move.
+* If a new plan is requested from the local planner after the evaluation of the first one, it will be created from scratch without using the previously made matrices. This may lead to performance leaks, since the ants will be exploring once again the same space without having the advantage of previous informations.
 
 **Setting up the robot for the experiments**
 * Run the master in a bash window using `roscore`.
