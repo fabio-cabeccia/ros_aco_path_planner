@@ -1,0 +1,5 @@
+<library path="lib/libant_colony_path_planner">
+    <class name="aco_ros/aco_ros_planner" type="aco_ros::aco_ros_planner" base_class_type="nav_core::BaseGlobalPlanner">
+        <description>This is a global planner plugin by Fabio Cabeccia .</description>
+    </class>
+</library>
