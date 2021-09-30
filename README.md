@@ -30,4 +30,6 @@ To send a goal use this button on the top of RViz GUI ![tasto](https://user-imag
 **Possible improvements**
 * In the next cell choosing procedure, one could also back up the cost of the cell with a new information based on the distance between that cell and the goal. In this case, closest cell will have a higher value than farther ones. 
 
-
+**Credits**
+iPath: A C++ Library of Intelligent Global Path Planners for Mobile Robots with ROS Integration (OccupancyGridMap, Ant and Path).
+https://github.com/coins-lab/ipath
