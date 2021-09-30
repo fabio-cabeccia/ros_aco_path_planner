@@ -10,4 +10,4 @@ ACO path planning plugin for Global Planner based on AS algorithm.
 
 **Currently known problems:**
 * If using slam and non static map, all the cell inside the costmap will not have 
-  a value other than 0 (free space). That is incorrect.
+  a value other than 0 (free space). 
