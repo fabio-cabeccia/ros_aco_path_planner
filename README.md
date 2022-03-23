@@ -9,9 +9,7 @@ ACO path planning plugin for Global Planner based on AS algorithm.
   `<param name="base_global_planner" value="aco_ros/aco_ros_planner"/>` or use the file `move_base_mod.launch` inside `/launch`.
 
 **Currently known problems:**
-* If using slam and non static map, all the cell inside the costmap will not have 
-  a value other than 0 (free space). This leads to a situation where the ant, while exploring, finds itself on the border of the map and it can not    continue to move.
-* If a new plan is requested from the local planner after the evaluation of the first one, it will be created from scratch without using the previously made matrices. This may lead to performance leaks, since the ants will be travelling once again in the same space without being advantaged by the previous exploration.
+
 
 **Experiments setup**
 
